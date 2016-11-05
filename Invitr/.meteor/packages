@@ -25,3 +25,4 @@ accounts-base
 accounts-password
 accounts-ui
 iron:router
+aldeed:simple-schema

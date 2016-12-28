@@ -1,0 +1,27 @@
+<template name="navBarCreate">
+	
+	<div class="containerDiv navBar">
+		<div class="blank" onclick="FlowRouter.go('/');">
+			<heading class="smallTitle">invitr</heading>
+		</div>
+	</div>
+
+</template>
+
+<template name="navBar">
+	
+	<div class="containerDiv navBar main">
+		<div class="blank" onclick="FlowRouter.go('/');">
+			<heading class="smallTitle">invitr</heading>
+		</div>
+	</div>
+
+	<div class="containerDiv welcome" onclick="FlowRouter.go('/user');">
+		<p>Welcome, Jim Collison</p>
+	</div>
+
+	<div class="containerDiv login out" onclick="FlowRouter.go('/');">
+		<p>log out</p>
+	</div>
+
+</template>

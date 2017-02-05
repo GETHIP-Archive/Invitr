@@ -1,9 +1,17 @@
 <template name ="signUp">
-	<form>
-		<input type="email" name = "registerEmail">
-		<input type="password" name = "registerPassword">
-		<input type="submit" name = "Register">
+	{{> navBarCreate}}
 
-	</form>
+	<div class="containerDiv form">
+		<form class="" id="submitbtn">
+				<div class="containerDiv formbg">
+					<h1 class="formTitle">sign up</h1>
+					<p>Email:</p>
+					<input type="email" name = "registerEmail" placeholder="Your Email" autofocus required>
+					<p>Password:</p>
+					<input type="password" name = "registerPassword" placeholder="Your password" autofocus required>
+				</div>
+				<input type="submit" class="createNew button" value="create my account" name = "Register">
+			</form>
+	</div>
 </template>
 

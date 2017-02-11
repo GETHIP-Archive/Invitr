@@ -1,9 +1,9 @@
 <template name="createEvent">
-	
+
 	{{> navBarCreate}}
 
 	<div class="containerDiv form">
-			<form class="" id="submitbtn">
+			<form id="eventForm">
 				<div class="containerDiv formbg">
 					<h1 class="formTitle">create your event</h1>
 					<p>Event Name:</p>
@@ -15,8 +15,8 @@
 					<p>Time:</p>
 					<input type="time" name="time" id="timeinput" required>
 					<p>Location:</p>
-					<input type="text" name="name" placeholder="Where you're having your Event" autofocus required>
-				
+					<input type="text" name="location" placeholder="Where you're having your Event" autofocus required>
+
 				</div>
 				<input type="submit" class="createNew button" value="create my event" id="createEvent">
 			</form>

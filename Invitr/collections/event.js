@@ -1,9 +1,9 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
-import './main.html';
+export const Events = new Mongo.Collection('events');
 
-CreateEvent = new SimpleSchema({
+event = new SimpleSchema({
   host: {
     type: String,
     label: "Host",
@@ -11,7 +11,8 @@ CreateEvent = new SimpleSchema({
   },
   event_name: {
     type: String,
-    label: "Title"
+    label: "Title",
+    max: 50
   },
   date: {
     type: Date,
@@ -24,28 +25,28 @@ CreateEvent = new SimpleSchema({
   },
   location: {
     type: String,
-    label: "location",
+    label: "Location",
     optional: true,
     max: 100
   },
   description: {
   	type: String,
-  	label: "description",
+  	label: "Description",
   }
 });
 
 UserProfile = new SimpleSchema({
   fullname: {
     type: String,
-    label: "fullname",
+    label: "Fullname",
   },
   email: {
   	type: String,
-  	label: "email",
+  	label: "Email",
   },
   bio: {
   	type: String,
-  	label: "biography",
+  	label: "Biography",
   	max: 250
   }
 

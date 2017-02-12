@@ -25,10 +25,10 @@ FlowRouter.route('/home', {
   }
 });
 
-FlowRouter.route('/calender', {
-  name: 'calender',
+FlowRouter.route('/calendar', {
+  name: 'calendar',
   action: function() {
-    BlazeLayout.render('calender');
+    BlazeLayout.render('calendar');
   }
 });
 

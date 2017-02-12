@@ -2,13 +2,33 @@
 	{{> navBarCreate}}
 
 	<div class="containerDiv form">
-		<form class="" id="submitbtn">
+		<form class=""  id="submitbtn">
 				<div class="containerDiv formbg">
 					<h1 class="formTitle">sign up</h1>
 					<p>Email:</p>
 					<input type="email" name = "registerEmail" placeholder="Your Email" autofocus required>
 					<p>Password:</p>
-					<input type="password" name = "registerPassword" placeholder="Your password" autofocus required>
+					<input type="password" name = "registerPassword" placeholder="Your password"  id="password" autofocus required>
+					<p>Confirm Password:</p>
+					<input type="password" name = "confirmPassword" placeholder="Confirm Password" id="confirm_password" autofocus required>
+					<!-- <script>
+					onsubmit="return myFunction()"
+						function myFunction() {
+   							 var pass1 = document.getElementById("password").value;
+   							 var pass2 = document.getElementById("confirm_password").value;
+ 						 	 var ok = true;
+   							 if (pass1 != pass2) {
+      							  //alert("Passwords Do not match");
+      							  document.getElementById("password").style.borderColor = "#E34234";
+      							  document.getElementById("confirm_password").style.borderColor = "#E34234";
+       							  ok = false;
+   							 }
+    					else {
+      					  alert("Passwords Match!!!");
+ 					   }
+    					return ok;
+					}
+					</script> -->
 				</div>
 				<input type="submit" class="createNew button" value="create my account" name = "Register">
 			</form>

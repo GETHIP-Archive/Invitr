@@ -18,6 +18,13 @@ FlowRouter.route('/create', {
   }
 });
 
+FlowRouter.route('/invitation', {
+  name: 'invitation',
+  action: function() {
+    BlazeLayout.render('invitation');
+  }
+});
+
 FlowRouter.route('/home', {
 	name: 'home',
   action: function() {
@@ -37,7 +44,6 @@ FlowRouter.route('/signUp/:redirect', {
   action: function() {
     BlazeLayout.render('signUp');
   }
-
 });
 
 FlowRouter.route('/eventView/:id', {

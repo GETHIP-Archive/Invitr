@@ -1,11 +1,12 @@
-<!-- <template name = "searchBox">
-  {{> EasySearch.Input index = usersIndex }}
+<template name="searchBox">
+  {{> EasySearch.Input index=usersIndex }}
+
   <ul>
     {{#EasySearch.Each index=usersIndex }}
     <li>Name of the user: {{name}}</li>
-    {{EasySearch.Each}}
+    {{/EasySearch.Each}}
   </ul>
   {{#EasySearch.IfNoResults index = usersIndex }}
   <div class="no-results">No results found.</div>
   {{/EasySearch.IfNoResults}}
-</template> -->
+</template>

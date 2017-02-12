@@ -34,17 +34,3 @@ Template.body.rendered = function () {
         fc.fullCalendar('refetchEvents');
     });
 };
-
-Template.body.events({
-    'click .addEvent': function () {
-        Events.insert({
-            date: new Date()
-        })
-    },
-    'click .removeEvent':function() {
-        var event = Events.findOne();
-        if(event) {
-            Events.remove(event._id);
-        }
-    }
-});

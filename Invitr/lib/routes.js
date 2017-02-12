@@ -39,6 +39,13 @@ FlowRouter.route('/calendar', {
   }
 });
 
+FlowRouter.route('/search', {
+  name: 'search',
+  action: function() {
+    BlazeLayout.render('search');
+  }
+});
+
 FlowRouter.route('/signUp/:redirect', {
 	name: 'signUp',
   action: function() {

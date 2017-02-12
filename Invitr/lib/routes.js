@@ -25,6 +25,13 @@ FlowRouter.route('/home', {
   }
 });
 
+FlowRouter.route('/calender', {
+  name: 'calender',
+  action: function() {
+    BlazeLayout.render('calender');
+  }
+});
+
 FlowRouter.route('/signUp/:redirect', {
 	name: 'signUp',
   action: function() {

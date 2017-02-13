@@ -1,0 +1,41 @@
+<template name="createAccount">
+	
+	{{> navBarCreate}}
+
+	<div class="containerDiv form">
+			<form class="" id="submitbtn">
+				<div class="containerDiv formbg">
+					<h1 class="formTitle">create your account</h1>
+					<div class="containerDiv nameForm">
+						<div class="containerDiv homeTop form">
+							<p>First Name:</p>
+							<input type="text" name="nameFirst" id="nameFirst" placeholder="your first name" autofocus required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Last Name:</p>
+							<input type="text" name="nameLast" id="nameLast" placeholder="your last name" required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Username:</p>
+							<input type="text" name="name" placeholder="your account name" required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Email Address:</p>
+							<input type="text" name="email" placeholder="your email" required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Password:</p>
+							<input type="password" name="pasword" placeholder="your password" required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Confirm Password:</p>
+							<input type="password" name="pasword" placeholder="your password again" required>
+						</div>
+					</div>
+				
+				</div>
+				<input type="submit" class="createNew button" value="create my account" id="createEvent" onclick="FlowRouter.go('/login');">
+			</form>
+		</div>
+
+</template>

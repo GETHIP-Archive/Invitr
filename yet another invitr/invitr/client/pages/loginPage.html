@@ -1,0 +1,31 @@
+<template name="loginPage">
+	
+	{{> navBarCreate}}
+
+	<div class="containerDiv form loginPage">
+			<form class="" id="submitbtn">
+				<div class="containerDiv formbg">
+					<div class="containerDiv loginPage">
+						<h1 class="formTitle">login</h1>
+						<div class="containerDiv homeTop form loginPage">
+							<p>Username:</p>
+							<input type="text" name="name" placeholder="username" required>
+						</div>
+						<div class="containerDiv homeTop form loginPage">
+							<p>Password:</p>
+							<input type="password" name="pasword" placeholder="password" required>
+							<div class="containerDiv passwordBlank">
+								<p>forgot password? click here</p>
+							</div>
+						</div>
+
+					</div>
+				
+				</div>
+				<input type="submit" class="createNew button" value="login" id="loginAccount" onclick="FlowRouter.go('/home');">
+				<input type="sumbit" class="notAButton" value="or" readonly>
+				<input type="submit" class="createNew button" value="create an account" id="createAccount" onclick="FlowRouter.go('/newAccount');">
+			</form>
+		</div>
+
+</template>

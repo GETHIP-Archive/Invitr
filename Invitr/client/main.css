@@ -100,7 +100,7 @@ html {
 .containerDiv.navSide {
   margin: 0;
   padding: 0;
-  background: #0294e3;
+  background: #0288D1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -116,7 +116,7 @@ html {
 }
 
 .containerDiv.navSide li {
-  background: #0294e3;
+  background: #0288D1;
   border-right: 1px solid rgb(2, 115, 177);
   border-right: 1px solid rgba(2, 115, 177, .5);
   border-bottom: 1px solid rgb(2, 115, 177);

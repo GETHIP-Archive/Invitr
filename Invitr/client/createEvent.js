@@ -5,7 +5,7 @@ Template.createEvent.events({
 		var host = Meteor.userId();
 		var name = event.target.name.value
     var description = event.target.description.value
-    var date = event.target.dueDate.value
+    var date = event.target.date.value
     var time = event.target.time.value
     var location = event.target.location.value
 

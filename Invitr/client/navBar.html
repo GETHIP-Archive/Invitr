@@ -14,10 +14,32 @@
 		<div class="blank" onclick="FlowRouter.go('/');">
 			<heading class="smallTitle">invitr</heading>
 		</div>
+	
+
+		<div class="containerDiv welcome" onclick="FlowRouter.go('/user');">
+			<p>Welcome, Jim Collison</p>
+		</div>
+
+		<div class="containerDiv login out" onclick="FlowRouter.go('/');">
+			<p>logout</p>
+		</div>
 	</div>
 
-	<div class="containerDiv welcome" onclick="FlowRouter.go('/user');">
-			{{> loginButtons}}
+</template>
+
+<template name="navSide">
+	
+	<div class="containerDiv navSide">
+
+		<ul>
+			<li><div class="sideNavTextDiv"><i class="fa fa-home" aria-hidden="true" onclick="FlowRouter.go('/home');"></i><p>Home</p></div></li>
+			<li><div class="sideNavTextDiv"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i><p>Your Events</p></div></li>
+			<li><div class="sideNavTextDiv"><i class="fa fa-calendar" aria-hidden="true" onclick="FlowRouter.go('/Calendar');"></i><p>Calendar</p></div></li>
+			<li><div class="sideNavTextDiv"><i class="fa fa-envelope-o" aria-hidden="true"></i><p>Invites</p></div></li>
+			<li><div class="sideNavTextDiv"><i class="fa fa-calendar-check-o" aria-hidden="true"></i><p>Past Events</p></div></li>
+			<li><div class="sideNavTextDiv"><i class="fa fa-cogs" aria-hidden="true"></i><p>Settings</p></div></li>
+		</ul>
+
 	</div>
 
 </template>

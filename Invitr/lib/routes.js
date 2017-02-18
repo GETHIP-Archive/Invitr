@@ -28,7 +28,7 @@ FlowRouter.route('/invitation', {
 FlowRouter.route('/home', {
 	name: 'home',
   action: function() {
-    BlazeLayout.render('home');
+    BlazeLayout.render('homePage');
   }
 });
 

@@ -46,6 +46,27 @@ FlowRouter.route('/search', {
   }
 });
 
+FlowRouter.route('/yourEvents', {
+  name: 'yourEvents',
+  action: function() {
+    BlazeLayout.render('yourEvents');
+  }
+});
+
+FlowRouter.route('/pastEvents', {
+  name: 'pastEvents',
+  action: function() {
+    BlazeLayout.render('pastEvents');
+  }
+});
+
+FlowRouter.route('/settings', {
+  name: 'settings',
+  action: function() {
+    BlazeLayout.render('settings');
+  }
+});
+
 FlowRouter.route('/signUp/:redirect', {
 	name: 'signUp',
   action: function() {

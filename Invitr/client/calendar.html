@@ -1,6 +1,8 @@
 <template name = "calendar">
-  {{> navBar}}
+  {{> navBarCreate}}
   {{> navSide}}
+  <div class="containerDiv form">
+    <div class="containerDiv formbg">
   <body>
 {{> fullcalendar
     class="mainCalendar"
@@ -10,4 +12,6 @@
     eventClick=onEventClicked
 }}
 </body>
+</div>
+</div>
 </template>

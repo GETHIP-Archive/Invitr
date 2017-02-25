@@ -83,3 +83,10 @@ FlowRouter.route('/eventView/:id', {
     BlazeLayout.render('eventView', {event: event});
   }
 });
+
+FlowRouter.route('/search/:id', {
+  name: 'searchBox',
+  action: function() {
+    BlazeLayout.render('searchBox');
+  }
+});

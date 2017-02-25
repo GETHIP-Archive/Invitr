@@ -33,4 +33,11 @@ Template.body.rendered = function () {
         Events.find();
         fc.fullCalendar('refetchEvents');
     });
+
+
 };
+
+Template.navSide.rendered = function () {
+  var height1 = $('html').height();
+  $('.navSide').height(height1 - 70);
+}

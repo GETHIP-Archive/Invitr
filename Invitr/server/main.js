@@ -24,15 +24,10 @@ Meteor.methods({
       	lastname: lastname,
       }
     })
-<<<<<<< Updated upstream
+
 }
 });
-=======
-<<<<<<< HEAD
-  }
-});
-=======
-}
-});
->>>>>>> origin/master
->>>>>>> Stashed changes
+
+
+
+

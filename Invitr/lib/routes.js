@@ -4,7 +4,7 @@ FlowRouter.route('/', {
     action: function(params) {
 
        	if (Meteor.userId() && Meteor.userId()) {
-    		BlazeLayout.render('home');
+    		BlazeLayout.render('homePage');
         } else {
     		BlazeLayout.render('index');
         }
@@ -22,6 +22,13 @@ FlowRouter.route('/invitation', {
   name: 'invitation',
   action: function() {
     BlazeLayout.render('invitation');
+  }
+});
+
+FlowRouter.route('/invites', {
+  name: 'invites',
+  action: function() {
+    BlazeLayout.render('invites');
   }
 });
 
@@ -81,5 +88,12 @@ FlowRouter.route('/eventView/:id', {
     var event = Events.findOne({_id: "hdYezckozpPGxiBaL"});
     console.log(event);
     BlazeLayout.render('eventView', {event: event});
+  }
+});
+
+FlowRouter.route('/search/:id', {
+  name: 'searchBox',
+  action: function() {
+    BlazeLayout.render('searchBox');
   }
 });

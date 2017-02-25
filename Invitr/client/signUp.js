@@ -1,4 +1,4 @@
-Template.register.events({
+Template.createAccount.events({
     'submit .form-register'(event) {
       // Prevent default browser form submit
       event.preventDefault();

@@ -168,9 +168,34 @@ html {
   color: #4FC3F7;
 }
 
+.containerDiv.formcg {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  height: 10em;
+  width: 70%;
+  background: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border-radius: 25px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.containerDiv.formcg p {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  margin-left: 16%;
+  margin-bottom: 1%; 
+  text-align: left;
+  font-size: 18px;
+}
+
 .containerDiv.formbg {
   padding-top: 10px;
   padding-bottom: 30px;
+  height: 10em;
   width: 70%;
   background: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -212,7 +237,7 @@ html {
 
 .containerDiv.formbg textarea {
   resize: none;
-  height: 100px;
+  height: 10px;
   padding-top: 10px;
 }
 
@@ -673,3 +698,55 @@ html {
 .containerDiv.createNew.front span.frontButtonText2, .containerDiv.createNew.front:hover span.frontButtonText1 {
   display: none;
 }
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+.form-login {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-login .form-login-heading,
+.form-login {
+  margin-bottom: 10px;
+}
+.form-login .checkbox {
+  font-weight: normal;
+}
+.form-login .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-login .form-control:focus {
+  z-index: 2;
+}
+.form-login input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-login input[type="password"] {
+  margin-bottom: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.sidebysideleft {
+  float: left;
+  display: inline-block;
+}
+.sidebysideright {
+  float: right;
+  display: inline-block;
+  padding-top: 10px
+}
+
+
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes

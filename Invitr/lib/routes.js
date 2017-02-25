@@ -14,14 +14,31 @@ FlowRouter.route('/', {
 FlowRouter.route('/create', {
 	name: 'create',
   action: function() {
+    if (Meteor.userId() && Meteor.userId()) {
     BlazeLayout.render("main", {content: "createEvent"});
+    } else {
+    BlazeLayout.render('index');
+    }
+    
   }
 });
 
 FlowRouter.route('/invitation', {
   name: 'invitation',
   action: function() {
-    BlazeLayout.render('invitation');
+
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("invitation");
+    } else {
+    BlazeLayout.render('index');
+    }
+  }
+});
+
+FlowRouter.route('/invites', {
+  name: 'invites',
+  action: function() {
+    BlazeLayout.render('invites');
   }
 });
 
@@ -35,49 +52,95 @@ FlowRouter.route('/invites', {
 FlowRouter.route('/home', {
 	name: 'home',
   action: function() {
-    BlazeLayout.render('homePage');
+
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("homePage");
+    } else {
+    BlazeLayout.render('index');
+    }
   }
-});
+}); 
 
 FlowRouter.route('/calendar', {
   name: 'calendar',
   action: function() {
-    BlazeLayout.render('calendar');
+
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("calendar");
+    } else {
+    BlazeLayout.render('index');
+    }
   }
 });
 
 FlowRouter.route('/search', {
   name: 'search',
   action: function() {
-    BlazeLayout.render('search');
+
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("search");
+    } else {
+    BlazeLayout.render('index');
+    }
   }
 });
 
 FlowRouter.route('/yourEvents', {
   name: 'yourEvents',
   action: function() {
-    BlazeLayout.render('yourEvents');
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("search");
+    } else {
+    BlazeLayout.render('index');
+    }
   }
 });
 
 FlowRouter.route('/pastEvents', {
   name: 'pastEvents',
   action: function() {
-    BlazeLayout.render('pastEvents');
+
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("pastEvents");
+    } else {
+    BlazeLayout.render('index');
+    }
   }
 });
 
 FlowRouter.route('/settings', {
   name: 'settings',
   action: function() {
-    BlazeLayout.render('settings');
+
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("settings");
+    } else {
+    BlazeLayout.render('index');
+    }
   }
 });
 
-FlowRouter.route('/signUp/:redirect', {
+FlowRouter.route('/login', {
+  name: 'login',
+  action: function() {
+    
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("homePage");
+    } else {
+    BlazeLayout.render('login');
+    }
+  }
+});
+
+FlowRouter.route('/signUp', {
 	name: 'signUp',
   action: function() {
-    BlazeLayout.render('signUp');
+
+    if (Meteor.userId() && Meteor.userId()) {
+    BlazeLayout.render("createAccount");
+    } else {
+    BlazeLayout.render('index');
+    }
   }
 });
 

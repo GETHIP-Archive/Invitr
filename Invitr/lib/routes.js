@@ -4,7 +4,7 @@ FlowRouter.route('/', {
     action: function(params) {
 
        	if (Meteor.userId() && Meteor.userId()) {
-    		BlazeLayout.render('home');
+    		BlazeLayout.render('homePage');
         } else {
     		BlazeLayout.render('index');
         }
@@ -22,6 +22,13 @@ FlowRouter.route('/invitation', {
   name: 'invitation',
   action: function() {
     BlazeLayout.render('invitation');
+  }
+});
+
+FlowRouter.route('/invites', {
+  name: 'invites',
+  action: function() {
+    BlazeLayout.render('invites');
   }
 });
 

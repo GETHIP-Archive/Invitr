@@ -14,7 +14,7 @@ Template.register.events({
 function _register(error){
   if(error){
     sAlert.error(error.reason);
-  }else{
+  } else{
     Router.router('/home');
   }
 }

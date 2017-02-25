@@ -23,5 +23,5 @@ Meteor.methods({
       	firstname: firstname,
       	lastname: lastname,
       }
-    });
-  },
+    })
+});

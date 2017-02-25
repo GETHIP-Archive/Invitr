@@ -1,37 +1,41 @@
-<template name ="signUp">
+<template name="createAccount">
+	
 	{{> navBarCreate}}
 
 	<div class="containerDiv form">
-		<form class=""  id="submitbtn">
+			<form class="form-register" id="submitbtn">
 				<div class="containerDiv formbg">
-					<h1 class="formTitle">sign up</h1>
-					<p>Email:</p>
-					<input type="email" name = "registerEmail" placeholder="Your Email" autofocus required>
-					<p>Password:</p>
-					<input type="password" name = "registerPassword" placeholder="Your password"  id="password" autofocus required>
-					<p>Confirm Password:</p>
-					<input type="password" name = "confirmPassword" placeholder="Confirm Password" id="confirm_password" autofocus required>
-					<!-- <script>
-					onsubmit="return myFunction()"
-						function myFunction() {
-   							 var pass1 = document.getElementById("password").value;
-   							 var pass2 = document.getElementById("confirm_password").value;
- 						 	 var ok = true;
-   							 if (pass1 != pass2) {
-      							  //alert("Passwords Do not match");
-      							  document.getElementById("password").style.borderColor = "#E34234";
-      							  document.getElementById("confirm_password").style.borderColor = "#E34234";
-       							  ok = false;
-   							 }
-    					else {
-      					  alert("Passwords Match!!!");
- 					   }
-    					return ok;
-					}
-					</script> -->
+					<h1 class="formTitle">create your account</h1>
+					<div class="containerDiv nameForm">
+						<div class="containerDiv homeTop form">
+							<p>First Name:</p>
+							<input type="text" name="nameFirst" id="nameFirst" placeholder="your first name" autofocus required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Last Name:</p>
+							<input type="text" name="nameLast" id="nameLast" placeholder="your last name" required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Username:</p>
+							<input type="text" name="name" placeholder="your account name" required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Email Address:</p>
+							<input type="text" name="email" placeholder="your email" required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Password:</p>
+							<input type="password" name="password" placeholder="your password" required>
+						</div>
+						<div class="containerDiv homeTop form">
+							<p>Confirm Password:</p>
+							<input type="password" name="cpassword" placeholder="your password again" required>
+						</div>
+					</div>
+				
 				</div>
-				<input type="submit" class="createNew button" value="create my account" name = "Register">
+				<input type="submit" class="createNew button" value="create my account" id="createEvent" onclick="FlowRouter.go('/login');">
 			</form>
-	</div>
-</template>
+		</div>
 
+</template>

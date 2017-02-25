@@ -15,6 +15,6 @@ function _register(error){
   if(error){
     sAlert.error(error.reason);
   } else{
-    Router.router('/home');
+    FlowRouter.go('/home');
   }
 }

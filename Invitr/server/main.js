@@ -14,7 +14,7 @@ Meteor.methods({
     }
 
     var profile
-    
+
     id = Accounts.createUser({
     	username: username,
       	email: email,
@@ -24,4 +24,5 @@ Meteor.methods({
       	lastname: lastname,
       }
     })
+}
 });

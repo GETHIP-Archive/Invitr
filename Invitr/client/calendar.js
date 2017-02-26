@@ -38,6 +38,6 @@ Template.body.rendered = function () {
 };
 
 Template.navSide.rendered = function () {
-  var height1 = $('html').height();
-  $('.navSide').height(height1 - 70);
+  var height = $('html').height();
+  $('.navSide').height(height);
 }

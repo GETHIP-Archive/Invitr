@@ -266,7 +266,7 @@ html {
 
 .containerDiv.formbg textarea {
   resize: none;
-  height: 10px;
+  height: 100px;
   padding-top: 10px;
 }
 

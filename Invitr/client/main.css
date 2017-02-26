@@ -187,14 +187,14 @@ html {
   margin: 0;
   width: 50%;
   margin-left: 16%;
-  margin-bottom: 1%; 
+  margin-bottom: 1%;
   text-align: left;
   font-size: 18px;
 }
 
 .containerDiv.formbg {
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 600px;
   height: 10em;
   width: 70%;
   background: white;
@@ -745,5 +745,3 @@ html {
   display: inline-block;
   padding-top: 10px
 }
-
-

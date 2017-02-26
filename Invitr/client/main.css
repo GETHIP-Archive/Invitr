@@ -602,6 +602,13 @@ html {
   padding: 0;
 }
 
+.containerDiv.nameFormlg {
+  background: none;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 110px;
+  padding: 0;
+}
 
 .createNew {
   width: 250px;
@@ -727,7 +734,7 @@ html {
 .containerDiv.createNew.front span.frontButtonText2, .containerDiv.createNew.front:hover span.frontButtonText1 {
   display: none;
 }
-
+/*
 .form-login {
   max-width: 330px;
   padding: 15px;
@@ -761,7 +768,7 @@ html {
   margin-bottom: 0px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
+}*/
 .sidebysideleft {
   float: left;
   display: inline-block;

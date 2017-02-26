@@ -129,12 +129,7 @@ FlowRouter.route('/login', {
 FlowRouter.route('/signUp', {
 	name: 'signUp',
   action: function() {
-
-   // if (Meteor.userId() && Meteor.userId()) {
     BlazeLayout.render("createAccount");
-   // } else {
-   // BlazeLayout.render('index');
-    //}
   }
 });
 

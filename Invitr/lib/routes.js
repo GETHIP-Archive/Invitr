@@ -89,7 +89,7 @@ FlowRouter.route('/yourEvents', {
   name: 'yourEvents',
   action: function() {
     if (Meteor.userId() && Meteor.userId()) {
-    BlazeLayout.render("search");
+    BlazeLayout.render("yourEvents");
     } else {
     BlazeLayout.render('index');
     }

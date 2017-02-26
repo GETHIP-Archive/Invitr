@@ -42,12 +42,6 @@ FlowRouter.route('/invites', {
   }
 });
 
-FlowRouter.route('/invites', {
-  name: 'invites',
-  action: function() {
-    BlazeLayout.render('invites');
-  }
-});
 
 FlowRouter.route('/home', {
 	name: 'home',
@@ -135,12 +129,7 @@ FlowRouter.route('/login', {
 FlowRouter.route('/signUp', {
 	name: 'signUp',
   action: function() {
-
-   // if (Meteor.userId() && Meteor.userId()) {
     BlazeLayout.render("createAccount");
-   // } else {
-   // BlazeLayout.render('index');
-    //}
   }
 });
 

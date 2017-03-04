@@ -5,16 +5,14 @@ Template.createEvent.events({
 		var host = Meteor.userId();
 		var name = event.target.name.value
     var description = event.target.description.value
-    var date = event.target.date.value
-    var time = event.target.time.value
+    var date = new Date(Date.parse(event.target.date.value))
+    console.log(date);
     var location = event.target.location.value
-
     var eventId = Events.insert({
       name: name,
       host: host,
       description: description,
       date: date,
-      time: time,
       location: location
     })
     if(eventId){

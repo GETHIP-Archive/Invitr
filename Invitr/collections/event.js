@@ -9,7 +9,7 @@ event = new SimpleSchema({
     label: "Host",
     max: 50
   },
-  event_name: {
+  name: {
     type: String,
     label: "Title",
     max: 50

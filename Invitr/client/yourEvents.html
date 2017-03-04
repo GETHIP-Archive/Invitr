@@ -2,33 +2,14 @@
 	{{> navSide}}
   {{> navBarCreate}}
 <div class="containerDiv form">
-			<form id="eventForm">
-				<div class="containerDiv formbg">
-               		<h1 class="formTitle">your events</h1>
-                	<p>Event Name:</p>
-					<p>Description:</p>
-					<p>Date:</p>
-					<p>Time:</p>
-					<p>Location:</p>
-                </div>
-			</form>
-		</div>
-    
-    <div class="containerDiv form">
-			<form id="eventForm">
-				<div class="containerDiv formbg">
-               		<h1 class="formTitle">your events</h1>
-                	<p>Event Name:</p>
-					<p>Description:</p>
-					<p>Date:</p>
-					<p>Time:</p>
-					<p>Location:</p>
-                </div>
-			</form>
+	<h1>your events</h1>
+	{{#each event in eventsHelper}}
+			<div class="containerDiv formbg">
+               		<h1 class="formTitle">{{event.name}}</h1>
+					<p>Description: {{event.description}}</p>
+					<p>Date: {{event.date}}</p>
+					<p>Location: {{event.location}}</p>
+            </div>
+        {{/each}}
 		</div>
 </template>
-
-
-
-
-

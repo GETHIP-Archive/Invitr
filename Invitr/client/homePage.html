@@ -39,10 +39,22 @@
 		<div class="homeEvents">
 			<div class="homeEvents underline">
 				<h1>upcoming events</h1>
-				
+                
+                {{#each event in eventsHelper}}
+			<div class="containerDiv formbg">
+               		<h1 class="formTitle">{{event.name}}</h1>
+                    <p>Host: {{event.host}}</p>
+					<p>Description: {{event.description}}</p>
+					<p>Date: {{event.date}}</p>
+					<p>Location: {{event.location}}</p>
+            </div>
+        {{/each}}
 			</div>
 		</div>
-	</div>	
+        
+        
+    </div>
+    
 
 </template>
 

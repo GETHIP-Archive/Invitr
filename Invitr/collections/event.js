@@ -2,6 +2,7 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
 export const Events = new Mongo.Collection('events');
+export const Invites = new Mongo.Collection('invites');
 
 event = new SimpleSchema({
   host: {
@@ -53,5 +54,12 @@ UserProfile = new SimpleSchema({
 });
 
 invites = new SimpleSchema({
-    
-})
+    invitee: {
+        type: String,
+        label: "invitee",
+        max: 500
+    },
+    event: {
+        type: event,    
+}
+});

@@ -10,7 +10,7 @@
 					<p>Date: {{event.date}}</p>
 					<p>Location: {{event.location}}</p>
             </div>
-        <input type="submit" class="createNew button" value="invite" onclick="FlowRouter.go('/invitation');">
+        <input type="submit" class="createNew button" value="invite" onclick="FlowRouter.go('/invitation/{{event._id}}');">
     </div>
 </template>
 

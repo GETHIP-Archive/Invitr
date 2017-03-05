@@ -23,7 +23,7 @@ FlowRouter.route('/create', {
   }
 });
 
-FlowRouter.route('/invitation', {
+FlowRouter.route('/invitation/:id', {
   name: 'invitation',
   action: function() {
 

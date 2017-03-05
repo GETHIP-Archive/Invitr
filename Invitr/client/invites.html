@@ -3,14 +3,15 @@
   {{> navBar}}
     <div class="containerDiv form">
 			<form id="eventForm">
-				<div class="containerDiv formbg">
-                	<h1 class="formTitle">your invites</h1>
-                	<p>Event Name:</p>
-					<p>Description:</p>
-					<p>Date:</p>
-					<p>Time:</p>
-					<p>Location:</p>
-                </div>
+                    {{#each invite in invites}}
+			<div class="containerDiv formbg">
+               		<h1 class="formTitle">{{invite.event.name}}</h1>
+					<p>Description: {{invite.event.description}}</p>
+					<p>Date: {{invite.event.date}}</p>
+					<p>Location: {{invite.event.location}}</p>
+            </div>
+        {{/each}}
+                
 			</form>
 		</div>
 </template>

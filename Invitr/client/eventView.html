@@ -1,3 +1,17 @@
+
 <template name = "eventView">
-  {{event}}
+ {{> navSide }}
+{{> navBar }}
+    <div class = "containerDiv form">
+    
+  <div class="containerDiv formbg">
+               		<h1 class="formTitle">{{event.name}}</h1>
+					<p>Description: {{event.description}}</p>
+					<p>Date: {{event.date}}</p>
+					<p>Location: {{event.location}}</p>
+            </div>
+        <input type="submit" class="createNew button" value="invite" onclick="FlowRouter.go('/invitation');">
+    </div>
 </template>
+
+

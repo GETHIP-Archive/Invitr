@@ -51,3 +51,7 @@ UserProfile = new SimpleSchema({
   }
 
 });
+
+invites = new SimpleSchema({
+    
+})

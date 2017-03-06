@@ -22,7 +22,7 @@
 						</div>
 						<div class="containerDiv homeTop form">
 							<p>Email Address:</p>
-							<input type="text" name="email" placeholder="your email" required>
+							<input type="email" name="email" placeholder="your email" required>
 						</div>
 						<div class="containerDiv homeTop form">
 							<p>Password:</p>
@@ -35,6 +35,8 @@
 					</div>
 				
 				</div>
+                <input type="button" class="createNew button" value="back" id="createAccount" onclick="FlowRouter.go('/login');">
+    <input type="sumbit" class="notAButton" value="" readonly>
 				<input type="submit" class="createNew button" value="create my account" id="createEvent">
 			</form>
 		</div>

@@ -1,4 +1,4 @@
-<template name = "invites">
+<template name="invites">
   {{> navSide}}
   {{> navBar}}
   <div class="yourEventsContainer">
@@ -9,7 +9,7 @@
     <form id="eventForm">
       {{#each invite in invites}}
       <div class="containerDiv formbg formyes">
-        <h1 class="formTitle eventTitle">{{invite.event.name}}</h1>
+        <h1 class="formTitle eventTitle" onclick="FlowRouter.go('/eventView/{{invite.event._id}}')">{{invite.event.name}}</h1>
         <p>Description: {{invite.event.description}}</p>
         <p>Date: {{invite.event.date}}</p>
         <p>Location: {{invite.event.location}}</p>

@@ -1,29 +1,31 @@
 <template name="login">
-  
-  {{> navBarCreate}}
+
+ {{> navBarCreate}}
   {{> sAlert}})
 
-  <div class="containerDiv form">
-      <form class="form-login" id="submitbtn">
-        <div class="containerDiv formbg">
-          <h1 class="formTitle">login</h1>
-          <div class="containerDiv nameFormlg">
-            <div class="containerDiv homeTop form">
-              <p>Username:</p>
-              <input type="text" name="name" placeholder="your account name" required>
-            </div>
-            <div class="containerDiv homeTop form">
-              <p>Password:</p>
-              <input type="password" name="password" placeholder="your password" required>
-            </div>
-          </div>
-        
-        </div>
+ <div class="containerDiv form loginPage">
+   <form class="form-login" id="submitbtn">
+    <div class="containerDiv formbg">
+     <div class="containerDiv loginPage">
+      <h1 class="formTitle">login</h1>
+      <div class="containerDiv homeTop form loginPage">
+       <p>Username:</p>
+       <input type="text" name="name" placeholder="username" required>
+      </div>
+      <div class="containerDiv homeTop form loginPage">
+       <p>Password:</p>
+       <input type="password" name="password" placeholder="password" required>
+       <div class="containerDiv passwordBlank">
+       </div>
+      </div>
 
-          <input type="submit" class="createNew button" value="login" id="createEvent">
-          <input type="text" class="notAButton" id="invisible" readonly>
-          <input type="submit" class="createNew button" value="register" id="createAccount" onclick="FlowRouter.go('/signUp');">
-      </form>
+     </div>
+
     </div>
+    <input type="submit" class="createNew button" value="login" id="createEvent">
+    <input type="sumbit" class="notAButton" value="or" readonly>
+    <input type="submit" class="createNew button" value="register" id="createAccount" onclick="FlowRouter.go('/signUp');">
+   </form>
+  </div>
 
 </template>

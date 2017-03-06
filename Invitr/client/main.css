@@ -89,7 +89,7 @@ html {
     margin: 0;
     padding: 10px;
     background: #0288D1;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: none;
     right: 0;
@@ -102,7 +102,7 @@ html {
     margin: 0;
     padding: 0;
     background: #0288D1;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -172,6 +172,26 @@ html {
     color: #4FC3F7;
 }
 
+.formTitle.eventTitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    color: #03a5fc;
+}
+
+.formTitle.eventTitle2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.formTitle.eventTitle:hover {
+    cursor: pointer;
+    color: #4FC3F7;
+}
+
 .containerDiv.formcg {
     padding-top: 10px;
     padding-bottom: 30px;
@@ -207,6 +227,24 @@ html {
     margin-top: 2%;
     border-radius: 25px;
     font-family: 'Cabin', sans-serif;
+}
+
+.containerDiv.formbg.homeEvents {
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 8%;
+    min-height: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
+    max-width: 55%;
+}
+
+.containerDiv.formbg.homeEvents p {
+    width: 80%;
+    text-align: left;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0 auto;
 }
 
 .containerDiv.formsg {
@@ -316,7 +354,7 @@ html {
 
 .notAButton {
     width: 20px;
-    height: 0px;
+    height: 12px;
     border: none;
     color: #0288D1;
     padding: 2%;
@@ -328,7 +366,6 @@ html {
     font-family: 'Cabin', sans-serif;
     margin-left: 15px;
     margin-right: 15px;
-    opacity: 0%;
 }
 
 .sideNavTextDiv {
@@ -566,6 +603,14 @@ html {
     min-height: 450px;
 }
 
+.homeEvents.title {
+    margin: 0;
+    margin-top: 1%;
+    margin-left: 24%;
+    min-height: 0px;
+    width: 30%;
+}
+
 .homeEvents.underline {
     min-height: 0;
     width: 75%;
@@ -631,13 +676,13 @@ html {
     font-size: 36px;
     border-radius: 25px;
     margin-bottom: 2%;
-    box-shadow: 0px 3px 15px grey;
+    /*box-shadow: 0px 3px 15px grey;*/
     font-family: 'Cabin', sans-serif;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    -webkit-transition: background-color 1s, color 1s, font-size .5s, box-shadow 1s;
-    transition: background-color 1s, color 1s, font-size .5s, box-shadow 1s;
+    -webkit-transition: background-color 1s, color 1s, font-size .5s, box-shadow .5s;
+    transition: background-color 1s, color 1s, font-size .5s, box-shadow .5s;
 }
 
 .createNew.button {
@@ -651,7 +696,7 @@ html {
 .containerDiv.homeButton:hover {
     background-color: #24b3f5;
     color: #f2f2f2;
-    box-shadow: 0px 2px 10px black;
+    /*box-shadow: 0px 2px 10px black;*/
     cursor: pointer;
 }
 

@@ -3,6 +3,7 @@
 	{{> navSide}}
 	{{> navBar}}
 
+    
 	<div class="containerDiv homePage">
 		<div class="homeBar">
 			<div class="containerDiv createNew homeBar" onclick="FlowRouter.go('/create');">
@@ -15,23 +16,22 @@
 
 		</div>
 		<div class="homeEvents">
+			<h1 class = "homeEvents title">upcoming events</h1>
 			<div class="homeEvents underline">
-
-				<h1>upcoming events</h1>
-                
-                {{#each event in eventsHelper}}
-			<div class="containerDiv formbg">
-               		<h1 class="formTitle">{{event.name}}</h1>
-                    <p>Host: {{event.host}}</p>
-					<p>Description: {{event.description}}</p>
-					<p>Date: {{event.date}}</p>
-					<p>Location: {{event.location}}</p>
-            </div>
-        {{/each}}
 			</div>
+
+			{{#each event in eventsHelper}}
+			<div class="containerDiv formbg homeEvents">
+				<h1 class="formTitle eventTitle" onClick="FlowRouter.go('/eventView/{{event._id}}')">{{event.name}}</h1>
+				<p>Host: {{event.host}}</p>
+				<p>Description: {{event.description}}</p>
+				<p>Date: {{event.date}}</p>
+				<p>Location: {{event.location}}</p>
+			</div>
+			{{/each}}
 		</div>
-        
-        
+
+
     </div>
-   
+
 </template>

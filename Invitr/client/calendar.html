@@ -1,7 +1,9 @@
 <template name="calendar">
+<!--
   {{> navSide}}
   {{> navBar}}
-  <div class="containerDiv form">
+-->
+<!--  <div class="containerDiv form">-->
     <div class="containerDiv formcag">
   <body>
 {{> fullcalendar
@@ -12,6 +14,9 @@
     eventClick=onEventClicked
 }}
 </body>
+<!--</div>-->
 </div>
-</div>
+    {{> navSide}}
+
+{{> navBar}}
 </template>

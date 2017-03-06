@@ -1,14 +1,23 @@
 <template name="yourEvents">
 	{{> navSide}}
-  {{> navBar}}
-<div class="containerDiv form">
-	{{#each event in eventsHelper}}
-			<div class="containerDiv formbg">
-               		<h1 class="formTitle eventTitle" onClick="FlowRouter.go('/eventView/{{event._id}}')">{{event.name}}</h1>
-					<p>Description: {{event.description}}</p>
-					<p>Date: {{event.date}}</p>
-					<p>Location: {{event.location}}</p>
-            </div>
-        {{/each}}
+	{{> navBar}}
+	<!-- <div class="containerDiv form"> -->
+		<div class="yourEventsContainer">
+			<h1 class = "yourEventsContainer eventsTitle">your events</h1>
+			<div class="homeEvents underline yourEventsUL"></div>
 		</div>
+		<div class="containerDiv formye">
+			{{#each event in eventsHelper}}
+			<div class="containerDiv formbg formyes">
+				<h1 class="formTitle eventTitle" onclick="FlowRouter.go('/eventView/{{event._id}}')">{{event.name}}</h1>
+				<p>Description: {{event.description}}</p>
+				<p>Date: {{event.date}}</p>
+				<p>Location: {{event.location}}</p>
+
+			</div>
+			{{/each}}
+
+		</div>
+
+	<!-- </div> -->
 </template>

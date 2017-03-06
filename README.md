@@ -6,5 +6,4 @@ Invitation app project for GETHIP 2016-17.
 - Mary Clare Rogers (Architect)
 - Will Guo
 - Kelvin Hong
-- Daniel Rust
 - Trae Brown

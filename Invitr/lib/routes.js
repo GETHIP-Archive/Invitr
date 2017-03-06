@@ -94,18 +94,6 @@ FlowRouter.route('/yourEvents', {
     }
 });
 
-FlowRouter.route('/pastEvents', {
-    name: 'pastEvents',
-    action: function () {
-
-        if (Meteor.userId() && Meteor.userId()) {
-            BlazeLayout.render("pastEvents");
-        } else {
-            BlazeLayout.render('index');
-        }
-    }
-});
-
 FlowRouter.route('/settings', {
     name: 'settings',
     action: function () {

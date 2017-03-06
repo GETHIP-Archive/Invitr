@@ -1,17 +1,21 @@
-<template name="invites">
+<template name = "invites">
   {{> navSide}}
   {{> navBar}}
-    <div class="containerDiv form">
-			<form id="eventForm">
-                    {{#each invite in invites}}
-			<div class="containerDiv formbg">
-               		<h1 class="formTitle eventTitle2">{{invite.event.name}}</h1>
-					<p>Description: {{invite.event.description}}</p>
-					<p>Date: {{invite.event.date}}</p>
-					<p>Location: {{invite.event.location}}</p>
-            </div>
-        {{/each}}
-                
-			</form>
-		</div>
+  <div class="yourEventsContainer">
+    <h1 class = "yourEventsContainer eventsTitle">your invites</h1>
+    <div class="homeEvents underline yourEventsUL"></div>
+  </div>
+  <div class="containerDiv formye">
+    <form id="eventForm">
+      {{#each invite in invites}}
+      <div class="containerDiv formbg formyes">
+        <h1 class="formTitle eventTitle">{{invite.event.name}}</h1>
+        <p>Description: {{invite.event.description}}</p>
+        <p>Date: {{invite.event.date}}</p>
+        <p>Location: {{invite.event.location}}</p>
+      </div>
+      {{/each}}
+
+    </form>
+  </div>
 </template>

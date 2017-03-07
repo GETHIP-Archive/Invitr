@@ -1,11 +1,11 @@
 <template name="createAccount">
-	
+
 	{{> navBarCreate}}
 	{{> sAlert}})
 
 	<div class="containerDiv form">
 			<form class="form-register" id="submitbtn">
-				<div class="containerDiv formbg">
+				<div class="containerDiv formbg signup">
 					<h1 class="formTitle">create your account</h1>
 					<div class="containerDiv nameForm">
 						<div class="containerDiv homeTop form">
@@ -24,19 +24,19 @@
 							<p>Email Address:</p>
 							<input type="email" name="email" placeholder="your email" required>
 						</div>
-						<div class="containerDiv homeTop form">
+						<div class="containerDiv homeTop form bottom">
 							<p>Password:</p>
 							<input type="password" name="password" placeholder="your password" required>
 						</div>
-						<div class="containerDiv homeTop form">
+						<div class="containerDiv homeTop form bottom">
 							<p>Confirm Password:</p>
 							<input type="password" name="cpassword" placeholder="your password again" required>
 						</div>
 					</div>
-				
+
 				</div>
-                <input type="button" class="createNew button" value="back" id="createAccount" onclick="FlowRouter.go('/login');">
-    <input type="sumbit" class="notAButton" value="" readonly>
+        <input type="button" class="createNew button" value="back" id="createAccount" onclick="FlowRouter.go('/login');">
+    		<input type="sumbit" class="notAButton badcss" value="" readonly>
 				<input type="submit" class="createNew button" value="create my account" id="createEvent">
 			</form>
 		</div>

@@ -3,11 +3,13 @@
 	{{> navSide}}
 	{{> navBar}}
 
-    
 	<div class="containerDiv homePage">
 		<div class="homeBar">
 			<div class="containerDiv createNew homeBar" onclick="FlowRouter.go('/create');">
 				<p>new event</p>
+			</div>
+			<div class="containerDiv createNew homeBar mobile" onclick="FlowRouter.go('/create');">
+				<i class="fa fa-plus" aria-hidden="true"></i>
 			</div>
 			<div class="containerDiv searchButton">
 				<i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -17,8 +19,7 @@
 		</div>
 		<div class="homeEvents">
 			<h1 class = "homeEvents title">upcoming events</h1>
-			<div class="homeEvents underline">
-			</div>
+			<div class="homeEvents underline"></div>
 
 			{{#each event in eventsHelper}}
 			<div class="containerDiv formbg homeEvents">
@@ -30,8 +31,6 @@
 			</div>
 			{{/each}}
 		</div>
-
-
-    </div>
+	</div>
 
 </template>

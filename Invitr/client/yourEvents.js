@@ -5,7 +5,6 @@ import {
 Template.yourEvents.helpers({
     eventsHelper() {
         var userId = Meteor.userId();
-        console.log(userId);
         var events = Events.find({
             host: userId
         }, {
@@ -14,8 +13,6 @@ Template.yourEvents.helpers({
             }
         });
 
-
-        console.log('it worked');
         return events;
     },
 });

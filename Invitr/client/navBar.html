@@ -1,6 +1,6 @@
 <template name="navBarCreate">
 
-	<div class="containerDiv navBar">
+	<div class="containerDiv navBar create">
 		<div class="blank" onclick="FlowRouter.go('/');">
 			<heading class="smallTitle">invitr</heading>
 		</div>
@@ -35,6 +35,19 @@
 			<li  onclick="FlowRouter.go('/Calendar');"><div class="sideNavTextDiv" ><i class="fa fa-calendar" aria-hidden="true"></i><p>Calendar</p></div></li>
 			<li onclick="FlowRouter.go('/invites');"><div class="sideNavTextDiv" ><i class="fa fa-envelope-o" aria-hidden="true"></i><p>Notifications</p></div></li>
 			<li onclick="FlowRouter.go('/Settings');"><div class="sideNavTextDiv"><i class="fa fa-cogs" aria-hidden="true"></i><p>Settings</p></div></li>
+		</ul>
+
+	</div>
+
+	<div class="containerDiv navSide mobile">
+
+		<ul>
+			<li onclick="FlowRouter.go('/home');"><div class="sideNavTextDiv mobile" ><i class="fa fa-home" aria-hidden="true"></i></div></li>
+			<li onclick="FlowRouter.go('/yourEvents');"><div class="sideNavTextDiv mobile"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></div></li>
+			<li  onclick="FlowRouter.go('/Calendar');"><div class="sideNavTextDiv mobile" ><i class="fa fa-calendar" aria-hidden="true"></i></div></li>
+			<li onclick="FlowRouter.go('/invites');"><div class="sideNavTextDiv mobile" ><i class="fa fa-envelope-o" aria-hidden="true"></i></div></li>
+			<li onclick="FlowRouter.go('/Settings');"><div class="sideNavTextDiv mobile"><i class="fa fa-cogs" aria-hidden="true"></i></div></li>
+			<li id="logout"><div class="sideNavTextDiv mobile"><i class="fa fa-sign-out" aria-hidden="true"></i></div></li>
 		</ul>
 
 	</div>

@@ -75,7 +75,7 @@ html {
 .yourEventsContainer {
     display: block;
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 350px;
 }
 
 .yourEventsContainer.eventsTitle {
@@ -101,11 +101,11 @@ html {
 .containerDiv.title {
     margin: 0;
     padding: 10%;
-    padding-top: 136.188px;
+    padding-top: 130px;
     background: #0288D1;
     position: absolute;
     top: 0;
-    bottom: 40%;
+    bottom: 0;
     right: 0;
     left: 0;
     box-shadow: 0px 3px 15px grey;
@@ -219,6 +219,29 @@ html {
     color: #4FC3F7;
 }
 
+.containerDiv.formcg {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 10em;
+    width: 70%;
+    background: white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 25px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.containerDiv.formcg p {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    margin-left: 16%;
+    margin-bottom: 1%;
+    text-align: left;
+    font-size: 18px;
+}
 
 .containerDiv.formbg {
     padding-top: 10px;
@@ -235,12 +258,13 @@ html {
 
 .containerDiv.formbg.homeEvents {
     margin: 0;
-    margin-top: 5%;
-    margin-left: 8%;
+    margin-top: 30px;
+    margin-left: 15px;
     min-height: 100px;
-    padding-left: 3%;
-    padding-right: 3%;
-    max-width: 55%;
+    width: 800px;
+    max-width: 800px;
+    display: block;
+
 }
 
 .containerDiv.formbg.homeEvents p {
@@ -259,7 +283,8 @@ html {
 }
 
 .containerDiv.formbg.formyes {
-    margin: 0px;
+    margin: 0;
+    margin-left: 35px;
     margin-bottom: 30px;
     width: 700px;
 }
@@ -271,14 +296,28 @@ html {
     width: 80%;
 }
 
+.containerDiv.formsg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 10em;
+    width: 60%;
+    background: white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 25px;
+    font-family: 'Cabin', sans-serif;
+}
+
 .containerDiv.formcag {
-    padding: 30px;
+    padding: 25px;
     height: 620px;
     width: 750px;
     background: white;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     /*margin: 0 auto;*/
-    margin-left: 300px;
+    margin-left: 350px;
     margin-bottom: 50px;
     margin-top: 40px;
     border-radius: 25px;
@@ -385,6 +424,11 @@ html {
     float: left;
 }
 
+.sideNavTextDiv.mobile{
+    padding-top: 33%;
+    padding-left: 27%;
+}
+
 .containerDiv.createNew.homeBar,
 .containerDiv.searchButton {
     width: 60px;
@@ -455,7 +499,7 @@ html {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     display: inline-block;
-    font-family: FontAwesome, 'Cabin', sans-serif;
+    font-family: FontAwesome;
     -webkit-transition: background-color 1s, color 1s, font-size .5s, box-shadow 1s;
     transition: background-color 1s, color 1s, font-size .5s, box-shadow 1s;
 }
@@ -525,12 +569,11 @@ html {
 }
 
 .containerDiv.homePage {
-    width: 84%;
-    max-width: 84%;
+    width: 100%;
     padding: 0;
     margin: 0;
-    margin-top: 100px;
-    margin-left: 200px;
+    margin-top: 125px;
+    margin-left: 350px;
 }
 
 .containerDiv.form.loginPage {
@@ -595,33 +638,34 @@ html {
     width: 800px;
     height: 45px;
     margin: 0;
-    margin-left: 25px;
     margin-bottom: 30px;
     padding: 15px;
     border-radius: 7.5px;
     box-shadow: 0px 1px 3px grey;
+    display: block;
 }
 
 .homeEvents {
     margin: 0;
     padding: 0;
     float: left;
-    width: 100%;
-    padding-left: 30px;
     min-height: 450px;
+    margin-bottom: 50px;
+    display: block;
+    width: 1000px;
 }
 
 .homeEvents.title {
     margin: 0;
-    margin-top: 1%;
-    margin-left: 24%;
     min-height: 0px;
-    width: 30%;
+    display: block;
+    width: 800px;
+    margin-left: 15px;
 }
 
 .homeEvents.underline {
     min-height: 0;
-    width: 75%;
+    width: 830px;
     margin: 0 auto;
     padding-bottom: 10px;
     border-bottom: 1px solid #0288D1;
@@ -632,7 +676,7 @@ html {
 }
 
 .homeEvents.underline.calUL {
-    width: 775px;
+    width: 800px;
 }
 
 .homeEvents h1 {
@@ -661,6 +705,10 @@ html {
     left: 0;
     right: 0;
     font-family: 'Cabin', sans-serif;
+}
+
+.containerDiv.lower p {
+    color: white;
 }
 
 .containerDiv.nameForm {
@@ -806,6 +854,43 @@ html {
     display: none;
 }
 
+
+/*
+.form-login {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-login .form-login-heading,
+.form-login {
+  margin-bottom: 10px;
+}
+.form-login .checkbox {
+  font-weight: normal;
+}
+.form-login .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-login .form-control:focus {
+  z-index: 2;
+}
+.form-login input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-login input[type="password"] {
+  margin-bottom: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}*/
+
 .sidebysideleft {
     float: left;
     display: inline-block;
@@ -876,6 +961,11 @@ input:checked+.slider:before {
 }
 
 
+.containerDiv.navSide.mobile {
+  visibility: hidden;
+}
+
+
 /* Rounded sliders */
 
 .slider.round {
@@ -884,4 +974,353 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.containerDiv.createNew.homeBar.mobile {
+    visibility: hidden;
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.containerInvites {
+  width: 1000px;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.containerDiv.formbg.homeEvents.iep {
+  margin-bottom: 50px;
+}
+
+.createNew.button.invitr {
+  display: block;
+  margin-left: 295px;
+}
+
+/* repsonsive code*/
+@media only screen and (max-width: 420px) {
+    /* for iphone: */
+
+    .containerDiv.navBar {
+      visibility: hidden;
+    }
+
+    .containerDiv.navSide {
+      visibility: hidden;
+    }
+
+    .containerDiv.navSide.mobile{
+        visibility: visible;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 810px;
+        height: 150px;
+    }
+
+    .containerDiv.navBar.create {
+        visibility: visible;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 420px;
+        height: 100px;
+    }
+
+    .containerDiv.navSide.mobile ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .containerDiv.navSide.mobile li {
+        display: inline-block;
+        height: 150px;
+        width: 16%;
+        border-bottom: none;
+    }
+
+    .containerDiv.navSide.mobile li:hover {
+        background: #03a5fc;
+        cursor: pointer;
+    }
+
+    .containerDiv.navSide.mobile li:hover p,
+    .containerDiv.navSide.mobile li:hover i {
+        color: white;
+    }
+
+    .containerDiv.navSide.mobile i {
+        padding: 0;
+        font-size: 64px;
+        padding-right: 0;
+        color: #E1F5FE;
+        -webkit-transition: color 1s;
+        transition: color 1s;
+    }
+
+    .containerDiv.homePage, .yourEventsContainer {
+        padding: 0;
+        margin: 0;
+        margin-top: 55%;
+        display: block;
+        width: 800px;
+    }
+
+    .homeBar {
+        background: #0288D1;
+        width: 700px;
+        height: 90px;
+        margin-left: 30px;
+        margin-bottom: 60px;
+        padding: 15px;
+        border-radius: 25px;
+        box-shadow: 0px 1px 3px grey;
+    }
+
+    .containerDiv.createNew.homeBar {
+        width: 0;
+        visibility: hidden;
+        position: fixed;
+        top: -100px;
+        left: -100px;
+    }
+
+    .containerDiv.createNew.homeBar.mobile {
+        width: 60px;
+        height: 90px;
+        border-radius: 45px;
+        visibility: visible;
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    .containerDiv.createNew.homeBar.mobile i {
+      font-size: 48px;
+      margin-top: 23px;
+    }
+
+    .containerDiv.searchButton i {
+      font-size: 48px;
+      margin-top: 20px;
+    }
+
+    .containerDiv.searchButton {
+        width: 100px;
+        height: 90px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .homeBar input {
+        width: 425px;
+        height: 90px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-size: 36px !important;
+    }
+
+    .homeEvents.title {
+        margin-top: 0;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .homeEvents h1, .yourEventsContainer.eventsTitle h1, .yourEventsContainer.eventsTitle, .yourEventsContainer.eventsTitle.cal {
+        font-size: 64px;
+    }
+
+    .homeEvents.underline, .homeEvents.underline.yourEventsUL, .homeEvents.underline.calUL  {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .containerDiv.formbg.homeEvents {
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 15px;
+        min-height: 100px;
+        width: 760px;
+        max-width: 800px;
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    .containerDiv.formye {
+        margin: 0px;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-bottom: 50px;
+        width: 770px;
+    }
+
+    .containerDiv.formbg.formyes {
+        margin: 0;
+        margin-left: 9%;
+        margin-right: 6%;
+        margin-bottom: 30px;
+        width: 85%;
+    }
+
+    .containerDiv.formcag {
+        padding: 25px;
+        height: 620px;
+        width: 700px;
+        background: white;
+        /*margin: 0 auto;*/
+        margin-left: 25px;
+        margin-top: 50px;
+        border-radius: 50px;
+    }
+
+    .containerDiv.title {
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+        padding-top: 125px;
+        /*width: 800px;*/
+    }
+    .bigTitle {
+        font-size: 108px;
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+    .containerDiv.createNew.front {
+        border-radius: 20px;
+        height: 40px;
+        width: 240px;
+        position: fixed;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        top: 400px;
+    }
+
+    .frontButtonText1 {
+        font-size: 36px;
+    }
+
+    .desc {
+      font-size: 16px;
+      width: 300px;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .smallTitle {
+        font-size: 48px;
+        font-family: 'Dosis', sans-serif;
+        /*  color: #E1F5FE;*/
+        color: white;
+        position: fixed;
+        top: 15px;
+        margin: auto;
+        left: 150px;
+    }
+
+    .containerDiv.form.loginPage {
+        width: 420px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .containerDiv.formbg {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding-bottom: 5px;
+        margin-top: 100px;
+    }
+
+    .containerDiv.formbg.cep {
+      margin-top: 130px;
+    }
+
+    .containerDiv.formbg.homeEvents.iep, .containerDiv.formbg.settings {
+      margin-top: 180px;
+      width: 700px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .containerDiv.formbg.settings {
+      margin-top: 200px;
+    }
+
+    .containerDiv.formbg.signup {
+      width: 350px;
+    }
+
+    .containerDiv.formbg p {
+        font-size: 14px;
+    }
+
+    .formTitle {
+        font-size: 36px;
+    }
+
+    .containerDiv.homeTop.form.bottom {
+      padding-bottom: 0;
+    }
+
+    .notAButton {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    *::-webkit-input-placeholder {
+        /*font-size: 12px;*/
+    }
+
+    *:-moz-placeholder {
+        /* FF 4-18 */
+        font-size: 12px;
+    }
+
+    *::-moz-placeholder {
+        /* FF 19+ */
+        font-size: 12px;
+    }
+
+    *:-ms-input-placeholder {
+        /* IE 10+ */
+        font-size: 12px;
+    }
+
+    .notAButton.badcss {
+      margin: 0;
+      padding: 0;
+    }
+
+    .createNew.button.invitr {
+      margin: auto;
+      margin-left: 150px;
+      margin-right: 150px;
+      margin-top: 50px;
+      height: 100px;
+      width: 500px;
+      font-size: 56px;
+      border-radius: 30px;
+    }
+
+    .containerInvites {
+      width: 800px;
+      margin-left: 0;
+      margin-top: 0;
+      margin: auto;
+    }
+
+    .containerDiv.formbg.formyes {
+        padding-bottom: 30px;
+    }
+
 }

@@ -16,7 +16,6 @@ Template.homePage.events({
 Template.homePage.helpers({
     eventsHelper() {
 
-
         var events = Events.find({
             date: {
                 $gte: new Date()
@@ -33,7 +32,6 @@ Template.homePage.helpers({
             console.log(user);
             event.host = user.profile.firstname + " " + user.profile.lastname + " (" + user.username + ") "
         }
-        console.log('it worked');
         return events;
     },
 });

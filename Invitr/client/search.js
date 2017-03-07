@@ -13,7 +13,7 @@ Template.homePage.events({
     },
 });
 
-Template.homePage.helpers({
+Template.search.helpers({
     eventsHelper() {
 
         var events = Events.find({

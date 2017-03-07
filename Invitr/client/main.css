@@ -20,7 +20,6 @@ html {
     font-family: 'Dosis', sans-serif;
     /*  color: #E1F5FE;*/
     color: white;
-
     position: fixed;
     top: 10px;
     left: 70px;
@@ -244,7 +243,6 @@ html {
     width: 800px;
     max-width: 800px;
     display: block;
-
 }
 
 .containerDiv.formbg.homeEvents p {
@@ -390,7 +388,7 @@ html {
     float: left;
 }
 
-.sideNavTextDiv.mobile{
+.sideNavTextDiv.mobile {
     padding-top: 33%;
     padding-left: 27%;
 }
@@ -722,6 +720,13 @@ html {
     margin-bottom: 5%;
 }
 
+.closeButton {
+    font-size: 18px;
+    padding: 0;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
 .createNew:hover,
 .containerDiv.homeButton:hover {
     background-color: #24b3f5;
@@ -892,9 +897,8 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-
 .containerDiv.navSide.mobile {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 
@@ -916,13 +920,13 @@ input:checked+.slider:before {
 }
 
 .containerInvites {
-  width: 1000px;
-  margin-left: 300px;
-  margin-top: 100px;
+    width: 1000px;
+    margin-left: 300px;
+    margin-top: 100px;
 }
 
 .containerDiv.formbg.homeEvents.iep {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .containerDiv.formbg.homeEvents.iep p {
@@ -931,23 +935,22 @@ input:checked+.slider:before {
 }
 
 .createNew.button.invitr {
-  display: block;
-  margin-left: 295px;
+    display: block;
+    margin-left: 295px;
 }
 
+
 /* repsonsive code*/
+
 @media only screen and (max-width: 420px) {
     /* for iphone: */
-
     .containerDiv.navBar {
-      visibility: hidden;
+        visibility: hidden;
     }
-
     .containerDiv.navSide {
-      visibility: hidden;
+        visibility: hidden;
     }
-
-    .containerDiv.navSide.mobile{
+    .containerDiv.navSide.mobile {
         visibility: visible;
         margin: 0;
         padding: 0;
@@ -958,7 +961,6 @@ input:checked+.slider:before {
         width: 810px;
         height: 150px;
     }
-
     .containerDiv.navBar.create {
         visibility: visible;
         margin: 0;
@@ -970,30 +972,25 @@ input:checked+.slider:before {
         width: 420px;
         height: 100px;
     }
-
     .containerDiv.navSide.mobile ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
-
     .containerDiv.navSide.mobile li {
         display: inline-block;
         height: 150px;
         width: 16%;
         border-bottom: none;
     }
-
     .containerDiv.navSide.mobile li:hover {
         background: #03a5fc;
         cursor: pointer;
     }
-
     .containerDiv.navSide.mobile li:hover p,
     .containerDiv.navSide.mobile li:hover i {
         color: white;
     }
-
     .containerDiv.navSide.mobile i {
         padding: 0;
         font-size: 64px;
@@ -1002,15 +999,14 @@ input:checked+.slider:before {
         -webkit-transition: color 1s;
         transition: color 1s;
     }
-
-    .containerDiv.homePage, .yourEventsContainer {
+    .containerDiv.homePage,
+    .yourEventsContainer {
         padding: 0;
         margin: 0;
         margin-top: 55%;
         display: block;
         width: 800px;
     }
-
     .homeBar {
         background: #0288D1;
         width: 700px;
@@ -1021,7 +1017,6 @@ input:checked+.slider:before {
         border-radius: 25px;
         box-shadow: 0px 1px 3px grey;
     }
-
     .containerDiv.createNew.homeBar {
         width: 0;
         visibility: hidden;
@@ -1029,7 +1024,6 @@ input:checked+.slider:before {
         top: -100px;
         left: -100px;
     }
-
     .containerDiv.createNew.homeBar.mobile {
         width: 60px;
         height: 90px;
@@ -1039,24 +1033,20 @@ input:checked+.slider:before {
         top: auto;
         left: auto;
     }
-
     .containerDiv.createNew.homeBar.mobile i {
-      font-size: 48px;
-      margin-top: 23px;
+        font-size: 48px;
+        margin-top: 23px;
     }
-
     .containerDiv.searchButton i {
-      font-size: 48px;
-      margin-top: 20px;
+        font-size: 48px;
+        margin-top: 20px;
     }
-
     .containerDiv.searchButton {
         width: 100px;
         height: 90px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-
     .homeBar input {
         width: 425px;
         height: 90px;
@@ -1064,22 +1054,23 @@ input:checked+.slider:before {
         border-bottom-left-radius: 20px;
         font-size: 36px !important;
     }
-
     .homeEvents.title {
         margin-top: 0;
         margin-left: 0px;
         width: 100%;
     }
-
-    .homeEvents h1, .yourEventsContainer.eventsTitle h1, .yourEventsContainer.eventsTitle, .yourEventsContainer.eventsTitle.cal {
+    .homeEvents h1,
+    .yourEventsContainer.eventsTitle h1,
+    .yourEventsContainer.eventsTitle,
+    .yourEventsContainer.eventsTitle.cal {
         font-size: 64px;
     }
-
-    .homeEvents.underline, .homeEvents.underline.yourEventsUL, .homeEvents.underline.calUL  {
+    .homeEvents.underline,
+    .homeEvents.underline.yourEventsUL,
+    .homeEvents.underline.calUL {
         width: 95%;
         margin-left: 2.5%;
     }
-
     .containerDiv.formbg.homeEvents {
         margin: 0;
         margin-top: 30px;
@@ -1090,7 +1081,6 @@ input:checked+.slider:before {
         display: block;
         padding-bottom: 30px;
     }
-
     .containerDiv.formye {
         margin: 0px;
         margin-top: 50px;
@@ -1098,7 +1088,6 @@ input:checked+.slider:before {
         margin-bottom: 50px;
         width: 770px;
     }
-
     .containerDiv.formbg.formyes {
         margin: 0;
         margin-left: 9%;
@@ -1106,7 +1095,6 @@ input:checked+.slider:before {
         margin-bottom: 30px;
         width: 85%;
     }
-
     .containerDiv.formcag {
         padding: 25px;
         height: 620px;
@@ -1117,7 +1105,6 @@ input:checked+.slider:before {
         margin-top: 50px;
         border-radius: 50px;
     }
-
     .containerDiv.title {
         position: absolute;
         bottom: 0;
@@ -1130,7 +1117,6 @@ input:checked+.slider:before {
         padding-top: 0;
         margin-left: 0;
     }
-
     .containerDiv.createNew.front {
         border-radius: 20px;
         height: 40px;
@@ -1140,22 +1126,18 @@ input:checked+.slider:before {
         padding-bottom: 30px;
         top: 400px;
     }
-
     .frontButtonText1 {
         font-size: 36px;
     }
-
     .homeEvents {
         width: 800px;
     }
-
     .desc {
-      font-size: 16px;
-      width: 300px;
-      margin: auto;
-      margin-top: 20px;
+        font-size: 16px;
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
     }
-
     .smallTitle {
         font-size: 48px;
         font-family: 'Dosis', sans-serif;
@@ -1166,13 +1148,11 @@ input:checked+.slider:before {
         margin: auto;
         left: 150px;
     }
-
     .containerDiv.form.loginPage {
         width: 420px;
         margin: 0 auto;
         margin-top: 100px;
     }
-
     .containerDiv.formbg {
         width: 300px;
         margin: 0 auto;
@@ -1180,88 +1160,72 @@ input:checked+.slider:before {
         padding-bottom: 5px;
         margin-top: 100px;
     }
-
     .containerDiv.formbg.cep {
-      margin-top: 130px;
+        margin-top: 130px;
     }
-
-    .containerDiv.formbg.homeEvents.iep, .containerDiv.formbg.settings {
-      margin-top: 180px;
-      width: 700px;
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
+    .containerDiv.formbg.homeEvents.iep,
     .containerDiv.formbg.settings {
-      margin-top: 200px;
+        margin-top: 180px;
+        width: 700px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
-
+    .containerDiv.formbg.settings {
+        margin-top: 200px;
+    }
     .containerDiv.formbg.signup {
-      width: 350px;
+        width: 350px;
     }
-
     .containerDiv.formbg p {
         font-size: 14px;
     }
-
     .formTitle {
         font-size: 36px;
     }
-
     .containerDiv.homeTop.form.bottom {
-      padding-bottom: 0;
+        padding-bottom: 0;
     }
-
     .notAButton {
         display: block;
         margin: auto;
         margin-bottom: 10px;
     }
-
     *::-webkit-input-placeholder {
         /*font-size: 12px;*/
     }
-
     *:-moz-placeholder {
         /* FF 4-18 */
         font-size: 12px;
     }
-
     *::-moz-placeholder {
         /* FF 19+ */
         font-size: 12px;
     }
-
     *:-ms-input-placeholder {
         /* IE 10+ */
         font-size: 12px;
     }
-
     .notAButton.badcss {
-      margin: 0;
-      padding: 0;
+        margin: 0;
+        padding: 0;
     }
-
     .createNew.button.invitr {
-      margin: auto;
-      margin-left: 150px;
-      margin-right: 150px;
-      margin-top: 50px;
-      height: 100px;
-      width: 500px;
-      font-size: 56px;
-      border-radius: 30px;
+        margin: auto;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 50px;
+        height: 100px;
+        width: 500px;
+        font-size: 56px;
+        border-radius: 30px;
     }
-
     .containerInvites {
-      width: 800px;
-      margin-left: 0;
-      margin-top: 0;
-      margin: auto;
+        width: 800px;
+        margin-left: 0;
+        margin-top: 0;
+        margin: auto;
     }
-
     .containerDiv.formbg.formyes {
         padding-bottom: 30px;
     }
-
 }
